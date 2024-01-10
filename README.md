@@ -4183,7 +4183,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
 > **Hasil Program Tugas 3 :**
 
-![menu3](https://github.com/syifaaurellia/SerendipityApps/assets/115867244/18627b81-377a-45ff-bc5f-7834bba17178)
+![VideoCapture_20240110-154420](https://github.com/wafhazahra08/ProjectUAS/assets/131223804/f67a6a83-0838-41e3-89ea-c1f8d1f63690)
 
 
 
