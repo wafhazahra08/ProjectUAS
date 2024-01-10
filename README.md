@@ -1130,12 +1130,10 @@ findViewById(R.id.btnSetAlarm).setOnClickListener(new View.OnClickListener() {
 </activity>
 ```
 
-> **Hasil Program Tugas 1 :**  
-![WhatsApp Image 2023-11-19 at 19 11 46_b9d46af7](https://github.com/syifaaurellia/IntentProject/assets/115867244/1a9966db-3b54-40f0-a574-6140caeff726)
 
 
 
-## Penjelasan & Hasil Program Tugas 2
+## Penjelasan Program Tugas 2
 
 1. Menu Utama 
 Pertama yang harus kita lakukan adalah mengganti tampilan menu utamanya dengan code yang baru agar ikon tombol berubah menjadi gambar, caranya adalah :
@@ -4189,7 +4187,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
 
 
-https://github.com/syifaaurellia/SerendipityApps/assets/115867244/095ce445-019d-4875-bb17-06a106ac3543
+https://github.com/wafhazahra08/ProjectUAS/assets/131223804/fc3213fd-8a46-4111-aea2-b9c310fd01c2
 
 
 ## Semoga Bermanfaat, Terima Kasih 
