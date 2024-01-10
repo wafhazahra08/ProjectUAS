@@ -1,6 +1,6 @@
 # ProjectUAS
 
-# SerendipityApps - UAS_PEMROGMOBILE
+# UAS_PEMROGRAMANMOBILE
 
 
 Nama    : Wafha Zahra Mulqiya
@@ -13,8 +13,6 @@ Mata Kuliah : Pemrograman Mobile 1
 
 Dosen Pengampu   : Donny Maulana, S.Kom., M.M.S.I.
 
-
-![serendipityapps](https://github.com/syifaaurellia/SerendipityApps/assets/115867244/991192c2-addc-4081-81df-6c2eb1189d09)
 
 
 
@@ -409,7 +407,7 @@ e. Project Set Alarm = MainActivity.java (karena merupakan Implicit Intent, jadi
 > `Strings.xml`
 ```
 <resources>
-    <string name="app_name">TGS9INTENT</string>
+    <string name="app_name">WafhaProject</string>
     <string name="Hello_World">Hello World!!</string>
 
     <string name="button_main">Send</string>
@@ -1412,7 +1410,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
 
 > - Setelah itu kita buka `MainActivity.java` untuk menambahkan code intent untuk masing-masing tombol :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -1592,7 +1590,7 @@ f. Project Maps = MainActivity.java (karena merupakan Implicit Intent, jadi code
 - `Strings.xml` 
 ```
 <resources>
-    <string name="app_name">cipaapps</string>
+    <string name="app_name">FinalApp</string>
     <string name="Hello_World">Hello World!!</string>
 
     <string name="button_main">Send</string>
@@ -1868,7 +1866,7 @@ public class HelloActivity extends AppCompatActivity{
 
 > `CountActivity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -2057,7 +2055,7 @@ public class CountActivity extends AppCompatActivity {
 
 > `SianidaActivity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.os.Bundle;
 
@@ -2221,7 +2219,7 @@ public class SianidaActivity extends AppCompatActivity {
 
 > `TwoActivity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -2283,7 +2281,7 @@ public class TwoActivity extends AppCompatActivity {
 
 > `Two2Activity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2455,10 +2453,6 @@ private void openMaps(Uri geoLocation) {
         </activity>
 ```
 
-> **Hasil Program Tugas 2 :**
-
-![WhatsApp Image 2023-11-28 at 21 28 52_8da8d5d2](https://github.com/syifaaurellia/IntentProject2/assets/115867244/62ab10ca-0192-48a1-b22a-5d771d8fda4c)
-
 
 
 ## Penjelasan & Hasil Program Tugas 3 
@@ -2473,11 +2467,11 @@ plugins {
 }
 
 android {
-    namespace = "com.cipaapps"
+    namespace = "com.finalapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.cipaapps"
+        applicationId = "com.finalapp"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -2523,7 +2517,7 @@ dependencies {
 => Pada `MainActivity.java` saya melakukan penambahan code, yaitu isi code keseluruhannya adalah :
 - `MainAcitivity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -2631,7 +2625,7 @@ public class MainActivity extends AppCompatActivity {
 
 => `FragmentActivity.java`
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -2724,11 +2718,11 @@ public class FragmentActivity extends AppCompatActivity {
     }
 }
 ```
-=> Membuat file fragment dengan cara klik kanan pada `MainActivity.java` lalu pilih dan klik fragment, setelah itu kita pilih dan klik fragment (Blank), setelah itu kita beri nama `ActionFragment`, `ComedyFragment`, `RomanceFragment`. Untuk file fragment sudah sekaligus dengan file layout xml nya (code berada pada bagian res `layout`)
+=> Membuat file fragment dengan cara klik kanan pada `MainActivity.java` lalu pilih dan klik fragment, setelah itu kita pilih dan klik fragment (Blank), setelah itu kita beri nama `ActionFragment`, `ComedyFragment`, `HororFragment`. Untuk file fragment sudah sekaligus dengan file layout xml nya (code berada pada bagian res `layout`)
 
 - `ActionFragment.java` :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2757,32 +2751,32 @@ public class ActionFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_action, container, false);
 
         // Find the button by its ID
-        Button avengerButton = view.findViewById(R.id.avenger);
-        Button myNameButton = view.findViewById(R.id.myname);
-        Button spidermanButton = view.findViewById(R.id.spiderman);
+        Button bigmouthButton = view.findViewById(R.id.bigmouth);
+        Button vagabondButton = view.findViewById(R.id.vagabond);
+        Button mynameButton = view.findViewById(R.id.myname);
 
         // Set click listener for each button
-        avengerButton.setOnClickListener(new View.OnClickListener() {
+        bigmouthButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Avenger button clicked");
-                playVideo(R.raw.avenger);
+                Log.d(TAG,BigMouth button clicked");
+                playVideo(R.raw.bigmouth);
             }
         });
 
-        myNameButton.setOnClickListener(new View.OnClickListener() {
+        vagabondeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Vagabond button clicked");
+                playVideo(R.raw.vagabond);
+            }
+        });
+
+        mynameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "MyName button clicked");
                 playVideo(R.raw.myname);
-            }
-        });
-
-        spidermanButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "Spiderman button clicked");
-                playVideo(R.raw.spiderman);
             }
         });
 
@@ -2813,7 +2807,7 @@ public class ActionFragment extends Fragment {
 ```
 - `ComedyFragment.java` :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2842,32 +2836,32 @@ public class ComedyFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_comedy, container, false);
 
         // Find the button by its ID
-        Button cektokosebelahButton = view.findViewById(R.id.cektokosebelah);
-        Button friendzoneButton = view.findViewById(R.id.friendzone);
-        Button hospitalplaylistButton = view.findViewById(R.id.hospitalplaylist);
+        Button exitButton = view.findViewById(R.id.exit);
+        Button dobongsoonButton = view.findViewById(R.id.dobongsoon);
+        Button goodmanagertButton = view.findViewById(R.id.goodmanger);
 
         // Set click listener for each button
-        cektokosebelahButton.setOnClickListener(new View.OnClickListener() {
+        exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Cektokosebelah2 button clicked");
-                playVideo(R.raw.cektokosebelah2);
+                Log.d(TAG, "Exit button clicked");
+                playVideo(R.raw.exit);
             }
         });
 
-        friendzoneButton.setOnClickListener(new View.OnClickListener() {
+        dobongsoonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Friendzone button clicked");
-                playVideo(R.raw.friendzone);
+                Log.d(TAG, "Dobongsoon button clicked");
+                playVideo(R.raw.dobongsoon);
             }
         });
 
-        hospitalplaylistButton.setOnClickListener(new View.OnClickListener() {
+        goodmanagerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "HospitalPlaylist button clicked");
-                playVideo(R.raw.hospitalplaylist);
+                Log.d(TAG, "GoodManager button clicked");
+                playVideo(R.raw.goodmanager);
             }
         });
 
@@ -2897,9 +2891,9 @@ public class ComedyFragment extends Fragment {
 }
 ```
 
-- `RomanceFragment.java` :
+- `HororFragment.java` :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2915,12 +2909,12 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.cipaapps.VideoPlayerActivity;
+import com.finalapp.VideoPlayerActivity;
 
 
-public class RomanceFragment extends Fragment {
+public class HororFragment extends Fragment {
 
-    private static final String TAG = "RomanceFragment";
+    private static final String TAG = "HororFragment";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -2930,32 +2924,32 @@ public class RomanceFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_romance, container, false);
 
         // Find the button by its ID
-        Button centurygirlButton = view.findViewById(R.id.centurygirl);
-        Button cheerupButton = view.findViewById(R.id.cheerup);
-        Button hiddenloveButton = view.findViewById(R.id.hiddenlove);
+        Button nighthascomeButton = view.findViewById(R.id.nighthascome);
+        Button savemeButton = view.findViewById(R.id.saveme);
+        Button mourninggraveButton = view.findViewById(R.id.mourninggrave);
 
         // Set click listener for each button
-        centurygirlButton.setOnClickListener(new View.OnClickListener() {
+        nighthascomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Centurygirl button clicked");
-                playVideo(R.raw.centurygirl);
+                Log.d(TAG, "NightHasCome button clicked");
+                playVideo(R.raw.nighthascoem);
             }
         });
 
-        cheerupButton.setOnClickListener(new View.OnClickListener() {
+        savemeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Cheerup button clicked");
-                playVideo(R.raw.cheerup);
+                Log.d(TAG, "SaveMe button clicked");
+                playVideo(R.raw.saveme);
             }
         });
 
-        hiddenloveButton.setOnClickListener(new View.OnClickListener() {
+        mourninggraveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Hiddenlove button clicked");
-                playVideo(R.raw.hiddenlove);
+                Log.d(TAG, "MourningGrave button clicked");
+                playVideo(R.raw.mourninggrave);
             }
         });
 
@@ -2987,7 +2981,7 @@ public class RomanceFragment extends Fragment {
 
 => Lalu buat java class dengan nama `ViewAdapter.java`, yang berisi code :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -3008,7 +3002,7 @@ public class ViewAdapter extends FragmentStateAdapter {
             case 1:
                 return new ComedyFragment();
             case 2:
-                return new RomanceFragment();
+                return new HororFragment();
             default:
                 return new ActionFragment();
         }
@@ -3023,7 +3017,7 @@ public class ViewAdapter extends FragmentStateAdapter {
 
 => Setelah itu membuat java class untuk memutar video dengan nama `VideoPlayerActivity.java`, yang berisi code :
 ```
-package com.cipaapps;
+package com.finalapp;
 
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
@@ -3210,7 +3204,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
 => `strings.xml` (tambahkan code strings.xml dibawah ini dengan code strings.xml pada project sebelumnya yaitu tugas 2) :
 ```
 <resources>
- <string name="app_name">SerendipityApps</string>
+ <string name="app_name">ProjectWafha</string>
     <!-- TODO: Remove or change this placeholder text -->
 <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
@@ -3653,7 +3647,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="serif"
-                        android:text="EMPTY"
+                        android:text="THANK U"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
@@ -3670,7 +3664,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:fontFamily="monospace"
-            android:text="© 2024 Syifa Aurellia"
+            android:text="© 2024 Wafha"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -3755,13 +3749,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="25dp"
-    tools:context=".ActionFragment">
-
-    <ImageView
-        android:id="@+id/imgMovie"
-        android:layout_width="150dp"
-        android:layout_height="170dp"
-        android:src="@drawable/film1"/>
+    tools:context="ActionFragment">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -3771,7 +3759,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginStart="16dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="AVENGERS : END GAME"/>
+        android:text="BIG MOUTH"/>
 
     <TextView
         android:id="@+id/Deskription"
@@ -3779,124 +3767,132 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_below="@id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="The story of the Avengers efforts to restore parts of the universe that were destroyed after the events of Infinity War. Using time travel technology, they attempt to steal the Infinity Stones to overcome the destruction caused by Thanos. An epic battle takes place, culminating in a great sacrifice and victory that changes the fate of the universe."/>
-
+        android:text="Park Chang-ho (Lee Jong-suk) adalah seorang pengacara yang memiliki tingkat kemenangan sangat kecil, yakni hanya 10 persen, dalam persidangan. Karena sifatnya yang terkenal banyak bicara, ia dijuluki Big Mouth alias bermulut besar. Namun suatu ketika, ia tidak sengaja terlibat dalam kasus pembunuhan yang mengancam jiwanya. Hal tersebut terjadi saat ia ditugaskan menangani kasus elit yang pada akhirnya membuatnya dilempar ke penjara dengan para pembunuh yang sedang ia selidiki. Sebab, para penyelidik menemukan sejumlah obat terlarang, uang tunai, senjata dan barang bukti lainnya di kantor Chang-ho. Karena penemuan ini, ia pun dituduh sebagai penipu genius bernama Big Mouse."/>
 
     <Button
-        android:id="@+id/avenger"
+        android:id="@+id/bigmouth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription"
-        android:text="Watch Trailer Now"
-        android:onClick="playAvengerTrailer"/>
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie"
+        android:onClick="playBigMouthTrailer"
+        android:text="Watch Trailer Now" />
 
+    <ImageView
+        android:id="@+id/imgMovie"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:src="@drawable/actionbigmouth" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/imgMovie2"
+        android:text="VAGABOND"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Deskription2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="212dp"
+        android:layout_toRightOf="@id/imgMovie2"
+        android:maxLines="5"
+        android:text="Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun (Lee Seung-gi). Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, Cha Dal-gun melakukan penyelidikan yang membawanya ke jaringan korupsi yang rumit.
+"
+        android:textColor="@color/black" />
 
     <ImageView
         android:id="@+id/imgMovie2"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="200dp"
-        android:src="@drawable/film4"/>
-
-    <TextView
-        android:id="@+id/tvTitle2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imgMovie2"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="200dp"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:text="MY NAME"/>
-
-    <TextView
-        android:id="@+id/Deskription2"
-        android:layout_toRightOf="@id/imgMovie2"
-        android:layout_below="@id/tvTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="210dp"
-        android:maxLines="5"
-        android:textColor="@color/black"
-        android:text="The story of Yoon Ji-woo, a woman who disguises herself as a member of a criminal gang to investigate her father's death. On his journey to find the truth, Ji-woo becomes involved in conflicts and dark secrets that lead to a battle between justice and ambition in the criminal world. This story shows Ji-woo's struggle to understand his identity while avenging his family, bringing a sense of tension and intrigue to each episode."/>
+        android:src="@drawable/actionvagabond" />
 
     <Button
-        android:id="@+id/myname"
+        android:id="@+id/vagabond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie2"
         android:layout_below="@id/Deskription2"
         android:text="Watch Trailer Now"
-        android:onClick="playMyNameTrailer"/>
+        android:onClick="playVagabondTrailer"/>
 
     <ImageView
         android:id="@+id/imgMovie3"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="400dp"
-        android:src="@drawable/film5"/>
+        android:src="@drawable/actionmyname"/>
 
     <TextView
         android:id="@+id/tvTitle3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imgMovie3"
         android:layout_marginStart="16dp"
+        android:layout_marginLeft="14dp"
         android:layout_marginTop="400dp"
-        android:textSize="16sp"
+        android:layout_toRightOf="@id/imgMovie3"
+        android:text="MY NAME"
         android:textColor="@color/black"
-        android:text="SPIDERMAN : NO WAY HOME"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/Deskription3"
-        android:layout_toRightOf="@id/imgMovie3"
-        android:layout_below="@id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="403dp"
+        android:layout_toRightOf="@id/imgMovie3"
         android:maxLines="5"
-        android:textColor="@color/black"
-        android:text="Peter Parker tries to fix the mess after his Spider-Man identity is revealed and his personal life is threatened. Peter enlists the help of Doctor Strange to use magic gone wrong, opening the multiverse and bringing forth a version of Spider-Man from a parallel reality. Along with the other Spider-Men, Peter confronts villains from the past and faces serious consequences in their efforts to right those wrongs."
-        />
+        android:text="Drama orisinal Netflix ini mengikuti perjalanan seorang pelajar SMA berusia 17 tahun bernama Yoon Ji Woo yang diperankan oleh Han So Hee. Ayah Yoon Ji Woo meninggal secara tiba-tiba. Lalu Ji Woo mati-matian ingin membalas dendam pada siapa pun yang bertanggung jawab atas kematian ayahnya. Yoon Ji Woo sendiri bekerja untuk kelompok kejahatan narkoba Dongcheonpa."
+        android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/spiderman"
+        android:id="@+id/myname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/imgMovie3"
         android:layout_below="@id/Deskription3"
-        android:text="Watch Trailer Now"
-        android:onClick="playSpidermanTrailer" />
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie3"
+        android:onClick="playMyNameTrailer"
+        android:text="Watch Trailer Now" />
 </RelativeLayout>
 ```
 
 - `fragment_comedy.xml`
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="25dp">
 
     <ImageView
         android:id="@+id/imgMovie"
         android:layout_width="150dp"
         android:layout_height="170dp"
-        android:src="@drawable/film2"/>
+        android:src="@drawable/horornighthascome"/>
 
     <TextView
         android:id="@+id/tvTitle"
@@ -3906,7 +3902,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginStart="16dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="CEK TOKO SEBELAH 2"/>
+        android:text="NIGHT HAS COME"/>
 
     <TextView
         android:id="@+id/Deskription"
@@ -3918,26 +3914,25 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="10dp"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="The film Cek Toko Sebelah 2 continues the story of the Soleh family and their humorous conflict when they discover that the shop next door to them is about to be renovated into a hipster cafe. In his efforts to maintain a traditional shop, Soleh must face the challenges of modernization while maintaining family relationships. With a distinctive comedy flavor, this film depicts changing times and family values in a light and entertaining atmosphere."
-        />
+        android:text="Drama Korea terbaik dan terbaru dengan retret menegangkan adalah NIGHT HAS COME. Drama ini menyoroti sekelompok siswa yang sedang melakukan retret namun berakhir menegangkan. Kisahnya tentang para siswa SMA kelas dua dipaksa untuk bermain permainan mafia dalam kehidupan nyata selama retret. Permainan mematikan tersebut membuat mereka saling mencurigai satu sama lain dan berusaha bertahan hidup. Di sisi lain, kerja sama juga harus dilakukan untuk bertahan hidup dan keluar dari tempat yang penuh misteri."/>
 
     <Button
-        android:id="@+id/cektokosebelah"
+        android:id="@+id/nighthascome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription"
         android:text="Watch Trailer Now"
-        android:onClick="playCektokosebelah2Trailer"/>
+        android:onClick="playNightHasComeTrailer"/>
 
     <ImageView
         android:id="@+id/imgMovie2"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="200dp"
-        android:src="@drawable/film6"/>
+        android:src="@drawable/hororsaveme"/>
 
     <TextView
         android:id="@+id/tvTitle2"
@@ -3948,7 +3943,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="200dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="FRIENDZONE"/>
+        android:text="SAVE ME"/>
 
     <TextView
         android:id="@+id/Deskription2"
@@ -3960,26 +3955,25 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="210dp"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="The story centers on old friends, Palm and Gink, who love each other but are afraid to express their feelings. The two had a close relationship, but when Palm confessed her feelings, Gink stated that she only saw him as a friend. The film presents Palm's emotional journey in maintaining their friendship, touching on themes of unrequited love and the complexity of sibling relationships."
-        />
+        android:text="ave Me mengisahkan tentang Im Sang-mi (Seo Yea-ji) yang memutuskan pindah dari Seoul ke sebuah desa terpencil bernama Muji-gun. Sang-mi dan keluarganya memilih pindah ke desa itu karena alasan ekonomi. Selain itu, sang adik Im Sang-jin (Jang Yoo-sang) menderita gangguan mental karena bullying." />
 
     <Button
-        android:id="@+id/friendzone"
+        android:id="@+id/saveme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription2"
         android:text="Watch Trailer Now"
-        android:onClick="playFriendzoneTrailer"/>
+        android:onClick="playSaveMeTrailer"/>
 
     <ImageView
         android:id="@+id/imgMovie3"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="400dp"
-        android:src="@drawable/film7"/>
+        android:src="@drawable/horormourninggrave"/>
 
     <TextView
         android:id="@+id/tvTitle3"
@@ -3990,7 +3984,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="400dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="HOSPITAL PLAYLIST"/>
+        android:text="MOURNING GRAVE"/>
 
     <TextView
         android:id="@+id/Deskription3"
@@ -4002,18 +3996,18 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="410dp"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="The Korean drama Hospital Playlist tells the story of five doctors who are friends and work together in the same hospital. They not only lead busy professional lives in the medical world, but also overcome challenges and joys in their personal lives. With warm humor and depth of character, the series provides an emotional and realistic portrait of friendship, love, and life in a hospital." />
+        android:text="Mourning Grave adalah film Korea yang dirilis pada tahun 2014. Film horor ini menceritakan tentang In Soo (Kang Ha Neul) yang punya kemampuan melihat hantu. Akibat kemampuan khususnya tersebut, ia dikucilkan oleh teman-temannya. In Soo pun pindah ke sebuah sekolah di pinggiran kota Seoul, Korea Selatan.."/>
 
     <Button
-        android:id="@+id/hospitalplaylist"
+        android:id="@+id/mourninggrave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription3"
         android:text="Watch Trailer Now"
-        android:onClick="playHospitalPlaylistTrailer"/>
+        android:onClick="playMourningGraveTrailer"/>
 </RelativeLayout>
 ```
 
@@ -4030,7 +4024,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:id="@+id/imgMovie"
         android:layout_width="150dp"
         android:layout_height="170dp"
-        android:src="@drawable/film3"/>
+        android:src="@drawable/comedyexit"/>
 
     <TextView
         android:id="@+id/tvTitle"
@@ -4039,7 +4033,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@id/imgMovie"
-        android:text="20TH CENTURY GIRL"
+        android:text="EXIT"
         android:textColor="@color/black"
         android:textSize="16sp" />
 
@@ -4053,29 +4047,25 @@ public class VideoPlayerActivity extends AppCompatActivity {
         android:layout_marginTop="10dp"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="Tells the story of Na Bo-ra, a student who vows to follow Baek Hyun-jin for the sake of her sick friend. However, Bo-ra falls in love with Poong Woon-ho, Hyun-jin's best friend. In the confusion of the love triangle, Bo-ra hides her feelings so as not to hurt her best friend who turns out to love Woon-ho. When Woon-ho returns to New Zealand, Bo-ra and Yeon-du arrive at the train station at the right time, allowing them to confess their feelings before going their separate ways. However, Woon-ho suddenly disappears from Bo-ra's life, leaving her heart broken.
-
-Over time, Bo-ra enters university and lives an adult life. In 2019, he received an art exhibition invitation from Joseph, Woon-ho's younger brother. Here, Bo-ra learns that Woon-ho died in an accident years ago. Joseph thanks Bo-ra for remembering his brother and reveals that Woon-ho's happiest moments were with Bo-ra. While watching the video Woon-ho made, Bo-ra reflects on the happy memories they shared.
-
-Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of confusion, love, friendship and loss. This film depicts the complexity of human relationships over time, with a story that touches the heart and leaves a deep impression." />
+        android:text="Yong-nam adalah seorang pria yang pernah menjadi salah satu pemanjat tebing terbaik semasa kuliahnya. la gagal mendapatkan pekerjaan selama bertahun-tahun. Kini, dia harus bergantung pada orang tuanya hanya untuk bertahan hidup. Untuk ulang tahun ibunya yang ke-70, dia bersikeras mengadakan pesta di Dream Garden karena kekasih lamanya, Eui-ju bekerja di sana. Apa yang dilakukan Yong-nam hanya akan membuat Eui-joo terkejut dan terkesan. Yong-nam berbohong pada Eui-joo bahwa dia sekarang memiliki karier yang sukses. Sementara itu, seorang teroris memarkir truk di dekat Cloud Garden dan mengeluarkan gas putih yang beracun. Gas tersebut dengan cepat menyebar ke sekitar dan menyebabkan kekacauan massal di kota." />
 
     <Button
-        android:id="@+id/centurygirl"
+        android:id="@+id/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription"
         android:text="Watch Trailer Now"
-        android:onClick="playCenturygirlTrailer"/>
+        android:onClick="playExitTrailer"/>
 
     <ImageView
         android:id="@+id/imgMovie2"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="200dp"
-        android:src="@drawable/film8"/>
+        android:src="@drawable/comedydobongsoon"/>
 
     <TextView
         android:id="@+id/tvTitle2"
@@ -4086,7 +4076,7 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:layout_marginTop="200dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="CHEER UP"/>
+        android:text="STRONG WOMAN DO BONG SOON"/>
 
     <TextView
         android:id="@+id/Deskription2"
@@ -4099,25 +4089,25 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:layout_toRightOf="@id/imgMovie"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="Tells the story of a group of high school students who band together to form a cheerleading team at their school, trying to overcome academic pressure and teenage problems. With the struggles, conflicts, and friendships that develop among the team members, they learn to overcome life's difficulties and find strength in their unity. This story presents the dynamics of school life full of enthusiasm, with a touch of comedy and warmth in experiencing adolescence." />
+        android:text="Drama Korea Strong Girl Bong Soon menceritakan tentang kehidupan sehari-hari Do Bong Soon. Terlahir dalam keluarga wanita tangguh, Bong Soon diberkahi dengan sebuah kekuatan super yang luar biasa dan turun-temurun. Mimpinya adalah membuat video game dengan dirinya sendiri sebagai karakter utama" />
 
     <Button
-        android:id="@+id/cheerup"
+        android:id="@+id/dobongsoon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription2"
         android:text="Watch Trailer Now"
-        android:onClick="playCheerupTrailer"/>
+        android:onClick="playDoBongSoonTrailer"/>
 
     <ImageView
         android:id="@+id/imgMovie3"
         android:layout_width="150dp"
         android:layout_height="175dp"
         android:layout_marginTop="400dp"
-        android:src="@drawable/film9"/>
+        android:src="@drawable/comedygoodmanager"/>
 
     <TextView
         android:id="@+id/tvTitle3"
@@ -4128,7 +4118,7 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:layout_marginTop="400dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="HIDDEN LOVE"/>
+        android:text="GOOD MANAGER"/>
 
     <TextView
         android:id="@+id/Deskription3"
@@ -4141,18 +4131,18 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:layout_toRightOf="@id/imgMovie"
         android:maxLines="5"
         android:textColor="@color/black"
-        android:text="The storyline is about the complicated relationships among a group of close friends who grow up together and face various life trials. With secrets and conflicts emerging, they must struggle to understand and accept each other, while going on a journey to find love and identity. Through a story full of intrigue and emotion, Hidden Love reveals hidden layers of relationships and shows the journey towards maturity and understanding." />
+        android:text="Good Manager menceritakan seorang kepala akuntan yang jenius bernama Kim Sung Ryong (Namgoong Min) yang bekerja di perusahaan TQ Group. Kim Sung Ryong awalnya berniat untuk menggelapkan dana. Namun, di tengah masa kerjanya ia justru memerangi korupsi dan berusaha menyelamatkan perusahaan" />
 
     <Button
-        android:id="@+id/hiddenlove"
+        android:id="@+id/goodmanager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
         android:layout_toRightOf="@id/imgMovie"
         android:layout_below="@id/Deskription3"
         android:text="Watch Trailer Now"
-        android:onClick="playHiddenloveTrailer"/>
+        android:onClick="playGoodManagerTrailer"/>
 </RelativeLayout>
 ```
 => Pada directory `drawable` kita bisa tambahkan gambar seperti poster film yang ingin kita tampilkan, dan jangan lupa untuk menambahkan icon `baseline_more_vert_24.xml` dengan cara klik kanan pada `drawable` lalu klik New, setelah itu kita pilih dan klik Vector Asset. Setelah itu kita klik clip art lalu kita pilih icon nya, jika sudah ketemu kita klik OK lalu kita klik next. Sama halnya ketika kita ingin menambahkan menu kembali pada halaman `VideoPlayerActivity` yaitu dengan langkah-langkah yang sama seperti sebelumnya dan jangan lupa untuk menambahkan icon `baseline_arrorw_circle_left_24.xml` lalu klik OK dan kita klik next.
@@ -4198,13 +4188,7 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
 ![menu3](https://github.com/syifaaurellia/SerendipityApps/assets/115867244/18627b81-377a-45ff-bc5f-7834bba17178)
 
 
-## Demo Tugas 1 
-https://github.com/syifaaurellia/IntentProject/assets/115867244/0343880b-e5cb-408e-87b9-0498ab6f677c
 
-## Demo Tugas 2
-https://github.com/syifaaurellia/IntentProject2/assets/115867244/c11c2259-1e5b-4924-b8e1-de1e7e9987c6
-
-## Demo Tugas 3
 https://github.com/syifaaurellia/SerendipityApps/assets/115867244/095ce445-019d-4875-bb17-06a106ac3543
 
 
